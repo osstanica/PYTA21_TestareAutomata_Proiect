@@ -1,0 +1,2 @@
+selenium==4.33.0
+html-testrunner==1.2.1

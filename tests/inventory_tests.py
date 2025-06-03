@@ -1,17 +1,12 @@
-import time
-
 from selenium.webdriver.common.by import By
-
 from setup.inventory_page import InventoryPage
 from setup.login_page import LoginPage
 
 
-class TestInventory(InventoryPage):
-
-    login_page = LoginPage()
+class TestInventory(InventoryPage, LoginPage):
 
     def test_az_default_sorting(self):
-        self.login_page.login_as_standard_user(self.login_page.USERNAME, self.login_page.PASSWORD)
+        LoginPage.login_as_standard_user(self, LoginPage.USERNAME, LoginPage.PASSWORD)
 
         in_app_sorting_option = self.get_text(self.SORT_DROPDOWN_CURRENT_LOCATOR)
         fail_message_sorting_default_option = f"The default sorting option should be: {self.DEFAULT_SORTING_OPTION}!"
@@ -29,7 +24,7 @@ class TestInventory(InventoryPage):
 
 
     def test_other_sorting(self):
-        self.login_page.login_as_standard_user(self.login_page.USERNAME, self.login_page.PASSWORD)
+        LoginPage.login_as_standard_user(self, LoginPage.USERNAME, LoginPage.PASSWORD)
         self.change_sorting_criteria()
 
         in_app_sorting_option = self.get_text(self.SORT_DROPDOWN_CURRENT_LOCATOR)
@@ -70,7 +65,7 @@ class TestInventory(InventoryPage):
 
 
     def test_product_added_to_cart(self):
-        self.login_page.login_as_standard_user(self.login_page.USERNAME, self.login_page.PASSWORD)
+        LoginPage.login_as_standard_user(self, LoginPage.USERNAME, LoginPage.PASSWORD)
         inventory_item = self.add_product_to_cart()
 
         fail_message_remove_button_displayed = "The 'Add to cart' button should have changed to 'Remove'!"

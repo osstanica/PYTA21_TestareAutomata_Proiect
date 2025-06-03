@@ -16,7 +16,7 @@ class TestSuite(unittest.TestCase):
 
         myrunner = HtmlTestRunner.HTMLTestRunner(
             combine_reports=True,
-            report_title=f'Saucedemo Report for {self.DATE_TODAY}',
-            report_name='Tests_Report'
+            report_title=f'Saucedemo Tests Report {self.DATE_TODAY}',
+            report_name='Saucedemo_Tests_Report'
         )
         myrunner.run(test_suite)
