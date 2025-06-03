@@ -25,14 +25,11 @@ class LoginPage(BasePage):
     def set_password(self, password):
         self.type(self.PASSWORD_INPUT_LOCATOR, password)
 
-    def click_login(self):
-        self.click_element(self.LOGIN_BUTTON_LOCATOR)
-
     def login_as_standard_user(self, username, password):
         self.wait_for_visibility(self.USERNAME_INPUT_LOCATOR)
         self.set_username(username)
         self.set_password(password)
-        self.click_login()
+        self.click_element(self.LOGIN_BUTTON_LOCATOR)
 
     def get_home_page_title(self):
         self.wait_for_visibility(self.HOME_PAGE_TITLE_LOCATOR)

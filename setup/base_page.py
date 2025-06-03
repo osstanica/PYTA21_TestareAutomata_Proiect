@@ -41,11 +41,11 @@ class BasePage(unittest.TestCase):
     def wait_for_visibility(self, locator):
         WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located(locator))
 
-    def compare_UI_with_reference(self, reference_data, UI_data, fail_message):
+    def compare_test_with_reference(self, reference_data, test_data, fail_message):
         try:
-            self.assertEqual(reference_data, UI_data)
+            self.assertEqual(reference_data, test_data)
         except AssertionError:
             self.verificationErrors.append(fail_message)
             print(f"Reference data: {reference_data}")
-            print(f"Test data: {UI_data}")
+            print(f"Test data: {test_data}")
             print(f"FAIL message: {fail_message}\n")

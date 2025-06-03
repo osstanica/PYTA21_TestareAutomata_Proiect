@@ -1,8 +1,10 @@
 import datetime
 import unittest
 import HtmlTestRunner
-from tests.login_tests import TestLogin
-from tests.inventory_tests import TestInventory
+from tests.login_tests import TestLoginPage
+from tests.inventory_tests import TestInventoryPage
+from tests.product_tests import TestProductPage
+from tests.cart_tests import TestCartPage
 
 
 class TestSuite(unittest.TestCase):
@@ -11,8 +13,10 @@ class TestSuite(unittest.TestCase):
 
     def test_suite(self):
         test_suite = unittest.TestSuite()
-        test_suite.addTest(unittest.defaultTestLoader.loadTestsFromTestCase(TestLogin))
-        test_suite.addTest(unittest.defaultTestLoader.loadTestsFromTestCase(TestInventory))
+        test_suite.addTest(unittest.defaultTestLoader.loadTestsFromTestCase(TestLoginPage))
+        test_suite.addTest(unittest.defaultTestLoader.loadTestsFromTestCase(TestInventoryPage))
+        test_suite.addTest(unittest.defaultTestLoader.loadTestsFromTestCase(TestProductPage))
+        test_suite.addTest(unittest.defaultTestLoader.loadTestsFromTestCase(TestCartPage))
 
         myrunner = HtmlTestRunner.HTMLTestRunner(
             combine_reports=True,

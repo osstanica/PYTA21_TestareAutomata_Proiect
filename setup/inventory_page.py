@@ -13,12 +13,13 @@ class InventoryPage(BasePage):
     HILO_SORTING_OPTION = "Price (high to low)"
 
     ## class locators
-    ITEMS_NAME_LOCATOR = (By.CLASS_NAME, "inventory_item_name ")
+    ITEMS_NAME_LOCATOR = (By.CLASS_NAME, "inventory_item_name")
     ITEMS_PRICE_LOCATOR = (By.CLASS_NAME, "inventory_item_price")
     SORT_DROPDOWN_LOCATOR = (By.CSS_SELECTOR, ".product_sort_container")
     SORT_DROPDOWN_CURRENT_LOCATOR = (By.CLASS_NAME, "active_option")
-    ADD_PRODUCT_TO_CART_LOCATOR_By_XPATH = "//div[@class='inventory_list']//descendant::button"
-    CART_ICON_LOCATOR = (By.CLASS_NAME, "shopping_cart_badge")
+    ADD_PRODUCT_TO_CART_LOCATOR_BY_XPATH = "(//div[@class='inventory_list']//descendant::button)"
+    CART_BADGE_LOCATOR = (By.CLASS_NAME, "shopping_cart_badge")
+
 
     ## class methods
     def change_sorting_criteria(self):
@@ -63,12 +64,12 @@ class InventoryPage(BasePage):
 
         ## automated selection:
         user_input = randint(1, max_number)
-        self.driver.find_element(By.XPATH, f"({self.ADD_PRODUCT_TO_CART_LOCATOR_By_XPATH})[{user_input}]").click()
+        self.driver.find_element(By.XPATH, f"{self.ADD_PRODUCT_TO_CART_LOCATOR_BY_XPATH}[{user_input}]").click()
         return user_input
 
 
     def get_cart_icon_label(self, number):
-        if int(self.get_text(self.CART_ICON_LOCATOR)) == int(number):
+        if int(self.get_text(self.CART_BADGE_LOCATOR)) == int(number):
             return True
         else:
             return False
