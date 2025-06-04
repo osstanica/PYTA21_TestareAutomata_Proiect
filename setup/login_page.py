@@ -9,14 +9,14 @@ class LoginPage(BasePage):
     PASSWORD = "secret_sauce"
     INCORRECT_PASSWORD = "secret_labs"
     LOGIN_ERROR_MESSAGE = "Epic sadface: Username and password do not match any user in this service"
-    HOME_PAGE_TITLE = "Swag Labs"
+    INVENTORY_PAGE_TITLE = "Swag Labs"
 
     ## class locators
     USERNAME_INPUT_LOCATOR = (By.ID, "user-name")
     PASSWORD_INPUT_LOCATOR = (By.ID, "password")
     LOGIN_BUTTON_LOCATOR = (By.ID, "login-button")
     LOGIN_ERROR_MESSAGE_LOCATOR = (By.XPATH, "//h3[@data-test='error']")
-    HOME_PAGE_TITLE_LOCATOR = (By.CSS_SELECTOR, '.app_logo')
+    INVENTORY_PAGE_TITLE_LOCATOR = (By.CSS_SELECTOR, '.app_logo')
 
     ## class methods
     def set_username(self, username):
@@ -31,6 +31,6 @@ class LoginPage(BasePage):
         self.set_password(password)
         self.click_element(self.LOGIN_BUTTON_LOCATOR)
 
-    def get_home_page_title(self):
-        self.wait_for_visibility(self.HOME_PAGE_TITLE_LOCATOR)
-        return self.get_text(self.HOME_PAGE_TITLE_LOCATOR)
+    def get_landing_page_title(self):
+        self.wait_for_visibility(self.INVENTORY_PAGE_TITLE_LOCATOR)
+        return self.get_text(self.INVENTORY_PAGE_TITLE_LOCATOR)

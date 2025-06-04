@@ -1,12 +1,11 @@
 from setup.base_page import BasePage
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.select import Select
 
 
 class CartPage(BasePage):
 
     ## class variables
-    INVENTORY_PAGE_TITLE = "Swag Labs"
+
 
     ## class locators
     CART_ICON_LOCATOR = (By.CLASS_NAME, "shopping_cart_link")

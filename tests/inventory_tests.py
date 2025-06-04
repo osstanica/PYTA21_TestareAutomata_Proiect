@@ -20,7 +20,6 @@ class TestInventoryPage(InventoryPage, LoginPage):
         fail_message_elements_az_sorting = f"The default sorting option should be: {sorted(list_all_item_names)}!"
         self.compare_test_with_reference(sorted(list_all_item_names), list_all_item_names, fail_message_elements_az_sorting)
 
-        self.assert_errors()
 
 
     def test_other_sorting(self):
@@ -61,7 +60,6 @@ class TestInventoryPage(InventoryPage, LoginPage):
             fail_message_elements_hilo_sorting = f"The highest to lowest sorting option should be: {list_all_item_prices}!"
             self.compare_test_with_reference(list_all_item_prices, list_all_item_prices_UI, fail_message_elements_hilo_sorting)
 
-        self.assert_errors()
 
 
     def test_product_added_to_cart(self):
@@ -74,4 +72,3 @@ class TestInventoryPage(InventoryPage, LoginPage):
         fail_message_cart_icon_update = "The cart icon should display a label of 1!"
         self.compare_test_with_reference(True, self.get_cart_icon_label(1), fail_message_cart_icon_update)
 
-        self.assert_errors()

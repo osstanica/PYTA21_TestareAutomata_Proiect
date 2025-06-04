@@ -5,6 +5,7 @@ from tests.login_tests import TestLoginPage
 from tests.inventory_tests import TestInventoryPage
 from tests.product_tests import TestProductPage
 from tests.cart_tests import TestCartPage
+from tests.checkout_tests import TestCheckoutPage
 
 
 class TestSuite(unittest.TestCase):
@@ -17,6 +18,7 @@ class TestSuite(unittest.TestCase):
         test_suite.addTest(unittest.defaultTestLoader.loadTestsFromTestCase(TestInventoryPage))
         test_suite.addTest(unittest.defaultTestLoader.loadTestsFromTestCase(TestProductPage))
         test_suite.addTest(unittest.defaultTestLoader.loadTestsFromTestCase(TestCartPage))
+        test_suite.addTest(unittest.defaultTestLoader.loadTestsFromTestCase(TestCheckoutPage))
 
         myrunner = HtmlTestRunner.HTMLTestRunner(
             combine_reports=True,

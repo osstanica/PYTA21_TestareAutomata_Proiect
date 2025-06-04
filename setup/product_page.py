@@ -7,7 +7,7 @@ from setup.inventory_page import InventoryPage
 class ProductPage(BasePage):
 
     ## class variables
-    INVENTORY_PAGE_TITLE = "Swag Labs"
+
 
     ## class locators
     ITEM_NAME_LOCATOR_BY_XPATH = "(//div[@class='inventory_item_name '])"
@@ -16,10 +16,10 @@ class ProductPage(BasePage):
     PRODUCT_NAME_LOCATOR = (By.CSS_SELECTOR, ".inventory_details_desc_container>.inventory_details_name")
     PRODUCT_DESCRIPTION_LOCATOR = (By.CSS_SELECTOR, ".inventory_details_desc_container>.inventory_details_desc")
     PRODUCT_PRICE_LOCATOR = (By.CSS_SELECTOR, ".inventory_details_desc_container>.inventory_details_price")
-    BACK_TO_PRODUCTS_BUTTON_LOCATOR = (By.NAME, "back-to-products")
+    BACK_HOME_BUTTON_LOCATOR = (By.NAME, "back-to-products")
 
     ## class methods
-    def get_details_and_open_product_page(self):
+    def get_inventory_product_details(self):
         list_all_item_names_elements = self.find_elements(InventoryPage.ITEMS_NAME_LOCATOR)
         max_number = len(list_all_item_names_elements)
         ## manual selection:
@@ -39,6 +39,4 @@ class ProductPage(BasePage):
         product_description = self.driver.find_element(By.XPATH, f"{self.ITEM_DESCRIPTION_LOCATOR_BY_XPATH}[{user_input}]").text
         product_price = self.driver.find_element(By.XPATH, f"{self.ITEM_PRICE_LOCATOR_BY_XPATH}[{user_input}]").text.strip('$')
 
-        self.driver.find_element(By.XPATH, f"{self.ITEM_NAME_LOCATOR_BY_XPATH}[{user_input}]").click()
-
-        return product_name, product_description, product_price
+        return user_input, product_name, product_description, product_price

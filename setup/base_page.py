@@ -1,4 +1,3 @@
-import time
 import unittest
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
@@ -17,11 +16,12 @@ class BasePage(unittest.TestCase):
         self.driver.implicitly_wait(10)
         self.verificationErrors = []
 
-    def tearDown(self):
-        self.driver.quit()
-
     def assert_errors(self):
         self.assertEqual([], self.verificationErrors)
+
+    def tearDown(self):
+        self.assert_errors()
+        self.driver.quit()
 
     def find_element(self, locator):
         return self.driver.find_element(*locator)
