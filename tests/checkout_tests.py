@@ -5,6 +5,7 @@ from setup.inventory_page import InventoryPage
 from setup.product_page import ProductPage
 from setup.cart_page import CartPage
 
+
 class TestCheckoutPage(CheckoutPage, LoginPage, InventoryPage, ProductPage, CartPage):
 
     def test_checkout_process(self):

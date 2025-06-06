@@ -46,6 +46,6 @@ class BasePage(unittest.TestCase):
             self.assertEqual(reference_data, test_data)
         except AssertionError:
             self.verificationErrors.append(fail_message)
-            print(f"Reference data: {reference_data}")
-            print(f"Test data: {test_data}")
+            print(f"Reference data: {reference_data}<p>")
+            print(f"Test data: {test_data}<p>")
             print(f"FAIL message: {fail_message}\n")

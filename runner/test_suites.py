@@ -26,3 +26,6 @@ class TestSuite(unittest.TestCase):
             report_name='Saucedemo_Tests_Report'
         )
         myrunner.run(test_suite)
+
+if __name__ == "__main__":
+    unittest.main()

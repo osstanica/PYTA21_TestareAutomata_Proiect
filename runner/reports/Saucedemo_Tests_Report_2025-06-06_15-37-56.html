@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Saucedemo Tests Report 04-Jun-2025</title>
+    <title>Saucedemo Tests Report 06-Jun-2025</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -10,10 +10,10 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <h2 class="text-capitalize">Saucedemo Tests Report 04-Jun-2025</h2>
-                <p class='attribute'><strong>Start Time: </strong>2025-06-04 16:36:00</p>
-                <p class='attribute'><strong>Duration: </strong>72.40 s</p>
-                <p class='attribute'><strong>Summary: </strong>Total: 11, Pass: 11</p>
+                <h2 class="text-capitalize">Saucedemo Tests Report 06-Jun-2025</h2>
+                <p class='attribute'><strong>Start Time: </strong>2025-06-06 15:37:56</p>
+                <p class='attribute'><strong>Duration: </strong>71.36 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 11, Pass: 10, Fail: 1</p>
             </div>
         </div>
         <div class="row">
@@ -35,17 +35,43 @@
                             <td class="col-xs-1">
                             </td>
                         </tr>
-                        <tr class='success'>
+                        <tr class='danger'>
                             <td class="col-xs-10">test_login_incorrect_credentials</td>
                             <td class="col-xs-1">
-                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
                             </td>
                             <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>Reference data: Test failed on purpose - Epic sadface: Username and password do not match any user in this service<p>
+Test data: Epic sadface: Username and password do not match any user in this service<p>
+FAIL message: Incorrect error message diaplayed after trying to login with incorrect credentials!
+
+</p><p style="color:maroon;">AssertionError: Lists differ: [] != ['Incorrect error message diaplayed after [40 chars]ls!']
+
+Second list contains 1 additional elements.
+First extra element 0:
+'Incorrect error message diaplayed after trying to login with incorrect credentials!'
+
+- []
++ ['Incorrect error message diaplayed after trying to login with incorrect '
++  'credentials!']</p><p style="color:maroon;">AssertionError: Lists differ: [] != ['Incorrect error message diaplayed after [40 chars]ls!']
+
+Second list contains 1 additional elements.
+First extra element 0:
+'Incorrect error message diaplayed after trying to login with incorrect credentials!'
+
+- []
++ ['Incorrect error message diaplayed after trying to login with incorrect '
++  'credentials!']
+</p>
                             </td>
                         </tr>
                         <tr>
                             <td colspan="3">
-                                Total: 2, Pass: 2 -- Duration: 12.86 s
+                                Total: 2, Pass: 1, Fail: 1 -- Duration: 10.79 s
                             </td>
                         </tr>
                     </tbody>
@@ -89,7 +115,7 @@
                         </tr>
                         <tr>
                             <td colspan="3">
-                                Total: 3, Pass: 3 -- Duration: 19.35 s
+                                Total: 3, Pass: 3 -- Duration: 20.23 s
                             </td>
                         </tr>
                     </tbody>
@@ -125,7 +151,7 @@
                         </tr>
                         <tr>
                             <td colspan="3">
-                                Total: 2, Pass: 2 -- Duration: 12.89 s
+                                Total: 2, Pass: 2 -- Duration: 13.25 s
                             </td>
                         </tr>
                     </tbody>
@@ -144,7 +170,7 @@
                     </thead>
                     <tbody>
                         <tr class='success'>
-                            <td class="col-xs-10">test_cart_value</td>
+                            <td class="col-xs-10">test_cart_details</td>
                             <td class="col-xs-1">
                                 <span class="label label-success" style="display:block;width:40px;">Pass</span>
                             </td>
@@ -161,7 +187,7 @@
                         </tr>
                         <tr>
                             <td colspan="3">
-                                Total: 2, Pass: 2 -- Duration: 12.98 s
+                                Total: 2, Pass: 2 -- Duration: 13.22 s
                             </td>
                         </tr>
                     </tbody>
@@ -197,7 +223,7 @@
                         </tr>
                         <tr>
                             <td colspan="3">
-                                Total: 2, Pass: 2 -- Duration: 14.32 s
+                                Total: 2, Pass: 2 -- Duration: 13.86 s
                             </td>
                         </tr>
                     </tbody>

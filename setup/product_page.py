@@ -6,9 +6,6 @@ from setup.inventory_page import InventoryPage
 
 class ProductPage(BasePage):
 
-    ## class constants
-
-
     ## class locators
     ITEM_NAME_LOCATOR_BY_XPATH = "(//div[@class='inventory_item_name '])"
     ITEM_DESCRIPTION_LOCATOR_BY_XPATH = "(//div[@class='inventory_item_desc'])"

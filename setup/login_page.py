@@ -8,7 +8,7 @@ class LoginPage(BasePage):
     USERNAME = "standard_user"
     PASSWORD = "secret_sauce"
     INCORRECT_PASSWORD = "secret_labs"
-    LOGIN_ERROR_MESSAGE = "Epic sadface: Username and password do not match any user in this service"
+    LOGIN_ERROR_MESSAGE = "Test failed on purpose - Epic sadface: Username and password do not match any user in this service"
     INVENTORY_PAGE_TITLE = "Swag Labs"
 
     ## class locators

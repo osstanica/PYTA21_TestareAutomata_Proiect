@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e21aa45-ac2c-4790-aa39-ce8ee80eb7cb" name="Changes" comment="project update">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup/cart_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup/cart_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup/checkout_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup/checkout_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup/inventory_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup/inventory_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup/login_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup/product_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup/product_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/cart_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/cart_tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/login_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/login_tests.py" afterDir="false" />
-    </list>
+    <list default="true" id="8e21aa45-ac2c-4790-aa39-ce8ee80eb7cb" name="Changes" comment="project update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -226,7 +217,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749044292747</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="project update">
+      <option name="closed" value="true" />
+      <created>1749209303532</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1749209303532</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

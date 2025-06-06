@@ -7,7 +7,7 @@ from setup.product_page import ProductPage
 
 class TestCartPage(CartPage, LoginPage, InventoryPage, ProductPage):
 
-    def test_cart_value(self):
+    def test_cart_details(self):
         LoginPage.login_as_standard_user(self, LoginPage.USERNAME, LoginPage.PASSWORD)
 
         inventory_item_position = InventoryPage.add_product_to_cart(self)
@@ -16,15 +16,10 @@ class TestCartPage(CartPage, LoginPage, InventoryPage, ProductPage):
         inventory_item_price = self.driver.find_element(By.XPATH, f"{ProductPage.ITEM_PRICE_LOCATOR_BY_XPATH}[{inventory_item_position}]").text.strip('$')
 
         product_info_from_inventory = [inventory_item_name, inventory_item_description, inventory_item_price]
-
         self.click_element(self.CART_ICON_LOCATOR)
-
         product_info_from_cart = self.get_cart_product_details()
 
         fail_message_product = "Product's info from the cart does not coincide with the info from the inventory page!"
-
-        product_info_from_cart = self.get_cart_product_details()
-        product_info_from_inventory = [inventory_item_name, inventory_item_description, inventory_item_price]
         for i in range(len(product_info_from_inventory)):
             self.compare_test_with_reference(product_info_from_inventory[i], product_info_from_cart[i], fail_message_product)
 

@@ -4,9 +4,6 @@ from selenium.webdriver.common.by import By
 
 class CartPage(BasePage):
 
-    ## class constants
-
-
     ## class locators
     CART_ICON_LOCATOR = (By.CLASS_NAME, "shopping_cart_link")
     CART_PRODUCT_NAME_LOCATOR = (By.CSS_SELECTOR, ".cart_item_label>a>.inventory_item_name")
