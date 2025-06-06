@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 
 class CheckoutPage(BasePage):
 
-    ## class variables
+    ## class constants
     FIRST_NAME = "Zoro"
     LAST_NAME = "Roronoa"
     ZIP_CODE = 1111

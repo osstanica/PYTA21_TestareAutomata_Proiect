@@ -6,7 +6,7 @@ from setup.inventory_page import InventoryPage
 
 class ProductPage(BasePage):
 
-    ## class variables
+    ## class constants
 
 
     ## class locators

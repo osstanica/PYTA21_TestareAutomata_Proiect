@@ -22,6 +22,9 @@ class TestCartPage(CartPage, LoginPage, InventoryPage, ProductPage):
         product_info_from_cart = self.get_cart_product_details()
 
         fail_message_product = "Product's info from the cart does not coincide with the info from the inventory page!"
+
+        product_info_from_cart = self.get_cart_product_details()
+        product_info_from_inventory = [inventory_item_name, inventory_item_description, inventory_item_price]
         for i in range(len(product_info_from_inventory)):
             self.compare_test_with_reference(product_info_from_inventory[i], product_info_from_cart[i], fail_message_product)
 

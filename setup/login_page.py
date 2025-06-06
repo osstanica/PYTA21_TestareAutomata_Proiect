@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 
 class LoginPage(BasePage):
 
-    ## class variables
+    ## class constants
     USERNAME = "standard_user"
     PASSWORD = "secret_sauce"
     INCORRECT_PASSWORD = "secret_labs"

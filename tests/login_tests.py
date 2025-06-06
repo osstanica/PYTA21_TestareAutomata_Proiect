@@ -17,5 +17,3 @@ class TestLoginPage(LoginPage):
 
         fail_message_login_correct_credentials = "Inventory page was not successfully loaded after the login action!"
         self.compare_test_with_reference(self.INVENTORY_PAGE_TITLE, self.get_landing_page_title(), fail_message_login_correct_credentials)
-
-

@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 
 class CartPage(BasePage):
 
-    ## class variables
+    ## class constants
 
 
     ## class locators

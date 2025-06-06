@@ -6,7 +6,7 @@ from selenium.webdriver.support.select import Select
 
 class InventoryPage(BasePage):
 
-    ## class variables
+    ## class constants
     DEFAULT_SORTING_OPTION = "Name (A to Z)"
     ZA_SORTING_OPTION = "Name (Z to A)"
     LOHI_SORTING_OPTION = "Price (low to high)"
