@@ -32,5 +32,5 @@ Alternativa este opțiunea de Run Test din IDE pe metoda *test_suite* din *runne
 
 ## Screenshots
 
-![Image](https://github.com/user-attachments/assets/c529ea04-38ef-47be-bad7-748cf463282a)
+![Report Example](![Image](https://github.com/user-attachments/assets/c529ea04-38ef-47be-bad7-748cf463282a))
 
