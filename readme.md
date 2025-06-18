@@ -1,6 +1,6 @@
 # PYTA21 Testare Automata
 
-Acest proiect a fost dezvoltat ca parte din cerințele pentru obținerea diplomei în Programare Python și Testare Automată în cardul Academiei {IT} Factory. 
+Acest proiect a fost dezvoltat ca parte din cerințele pentru obținerea diplomei în Programare Python și Testare Automată în cadrul Academiei {iT} Factory. 
 
 
 ## Documentation
@@ -61,3 +61,8 @@ Alternativa este opțiunea de Run Test din IDE pe metoda *test_suite* din *runne
 ## Authors
 
 - [@osstanica](https://github.com/osstanica)
+
+
+## Acknowledgements
+
+ - [{iT} Factory Academy](https://www.itfactory.ro/)
