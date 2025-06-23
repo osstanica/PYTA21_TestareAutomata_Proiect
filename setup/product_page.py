@@ -17,6 +17,12 @@ class ProductPage(BasePage):
 
     ## class methods
     def get_inventory_product_details(self):
+        """The "get_inventory_product_details" function can be run in two modes: with manual selection or with automated selection.
+        If the "manual selection" code is the one not commented, then the test will require manual intervetion from a user to select for which product from the page should the details be returned.
+        If the "automated selection" code is the one not commented, then the test will randomly select one of the available products on the page for which to return the details.
+        The function returns which product was selected in the form of the variable user_input - out of all the available max_number products from the page, the one from the position user_input (0 < user_input <= max_number), the product name, product description and price.
+        """
+
         list_all_item_names_elements = self.find_elements(InventoryPage.ITEMS_NAME_LOCATOR)
         max_number = len(list_all_item_names_elements)
         ## manual selection:

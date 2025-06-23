@@ -26,6 +26,8 @@ class CheckoutPage(BasePage):
 
     ## class methods
     def insert_shipping_details(self):
+        """The "insert_shipping_details" function uses the constants defined at the CheckoutPage class level to insert predefined data in the checkout form."""
+
         self.wait_for_visibility(self.FIRST_NAME_LOCATOR)
         self.type(self.FIRST_NAME_LOCATOR, self.FIRST_NAME)
         self.type(self.LAST_NAME_LOCATOR, self.LAST_NAME)

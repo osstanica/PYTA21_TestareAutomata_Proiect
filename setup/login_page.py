@@ -26,11 +26,15 @@ class LoginPage(BasePage):
         self.type(self.PASSWORD_INPUT_LOCATOR, password)
 
     def login_as_standard_user(self, username, password):
+        """The "login_as_standard_user" function has the role of grouping the necessary steps for a login action: enter username, enter password, and click on Login."""
+
         self.wait_for_visibility(self.USERNAME_INPUT_LOCATOR)
         self.set_username(username)
         self.set_password(password)
         self.click_element(self.LOGIN_BUTTON_LOCATOR)
 
     def get_landing_page_title(self):
+        """The "get_landing_page_title" function returns the title of the landing/inventory page, and it can be used to verify that after certain actions throughout the app, the user is directed to the landing/inventory page."""
+
         self.wait_for_visibility(self.INVENTORY_PAGE_TITLE_LOCATOR)
         return self.get_text(self.INVENTORY_PAGE_TITLE_LOCATOR)

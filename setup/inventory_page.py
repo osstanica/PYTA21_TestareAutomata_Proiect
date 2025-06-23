@@ -23,6 +23,12 @@ class InventoryPage(BasePage):
 
     ## class methods
     def change_sorting_criteria(self):
+        """The "change_sorting_criteria" function can be run in two modes: with manual selection or with automated selection.
+        If the "manual selection" code is the one not commented, then the test will require manual intervetion from a user to select which type of sorting should be applied.
+        If the "automated selection" code is the one not commented, then the test will randomly select one of the available options for sorting.
+        The type of sorting that was selected, either manually or automatically, is then applied.
+        """
+
         ## manual selection:
         # user_input = (input("Alege tipul de sortare dorit: \n1. Name (A to Z)\n2. Name (Z to A)\n3. Price (low to high)\n4. Price (high to low)\n"))
         # while True:
@@ -49,8 +55,16 @@ class InventoryPage(BasePage):
 
 
     def add_product_to_cart(self):
+        """The "add_product_to_cart" function can be run in two modes: with manual selection or with automated selection.
+        If the "manual selection" code is the one not commented, then the test will require manual intervention from a user to select which product from the page should be added in the shopping cart.
+        If the "automated selection" code is the one not commented, then the test will randomly select one of the available products on the page to be added in the shopping cart.
+        The chosen product is added in the shopping cart.
+        The function returns which product was added in the form of the variable user_input - out of all the available max_number products from the page, the one from the position user_input (0 < user_input <= max_number).
+        """
+
         list_all_item_names_elements = self.find_elements(self.ITEMS_NAME_LOCATOR)
         max_number = len(list_all_item_names_elements)
+
         ## manual selection:
         # user_input = (input("Alege al catelea produs de pe pagina sa fie adaugat in cos!\n"))
         # while True:
@@ -69,6 +83,10 @@ class InventoryPage(BasePage):
 
 
     def get_cart_icon_label(self, number):
+        """The "get_cart_icon_label" function verifies if the label displayed next to the shopping cart coincides with the number entered as the function's parameter.
+        If they do, the function returns True, otherwise, it returns False.
+        """
+
         if int(self.get_text(self.CART_BADGE_LOCATOR)) == int(number):
             return True
         else:

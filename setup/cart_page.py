@@ -13,6 +13,10 @@ class CartPage(BasePage):
 
     ## class methods
     def get_cart_product_details(self):
+        """The "get_cart_product_details" function returns a list with the name, description and price of the item that is present in the cart.
+        Note: this function can be used if only one product is added to the cart.
+        """
+
         cart_product_name = self.get_text(self.CART_PRODUCT_NAME_LOCATOR)
         cart_product_description = self.get_text(self.CART_PRODUCT_DESCRIPTION_LOCATOR)
         cart_product_price = self.get_text(self.CART_PRODUCT_PRICE_LOCATOR).strip('$')

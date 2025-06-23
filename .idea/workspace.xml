@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e21aa45-ac2c-4790-aa39-ce8ee80eb7cb" name="Changes" comment="readme update" />
+    <list default="true" id="8e21aa45-ac2c-4790-aa39-ce8ee80eb7cb" name="Changes" comment="comments added">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup/base_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup/cart_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup/cart_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup/checkout_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup/checkout_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup/inventory_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup/inventory_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup/login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup/product_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup/product_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/cart_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/cart_tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/checkout_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/checkout_tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/inventory_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/inventory_tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/login_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/login_tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/product_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/product_tests.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,43 +54,64 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python tests.Python tests for cart_tests.TestCart.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for cart_tests.TestCart.test_cart_value.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for cart_tests.TestCartPage.test_cart_value.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for cart_tests.TestCartPage.test_continue_shopping_functionality.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for checkout_tests.TestCheckoutPage.test_checkout_process.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for checkout_tests.TestCheckoutPage.test_total_price_value.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for inventory_tests.TestInventory.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for inventory_tests.TestInventory.test_az_default_sorting.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for inventory_tests.TestInventory.test_other_sorting.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for inventory_tests.TestInventory.test_product_added_to_cart.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for login_tests.TestLogin.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for login_tests.TestLogin.test_login_correct_credentials.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for login_tests.TestLogin.test_login_incorrect_credentials.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for login_tests.TestLoginPage.test_login_correct_credentials.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for product_tests.TestProductPage.test_product_details.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for product_tests.TestProductPage.test_return_to_inventory.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for product_tests.TestProductPage.test_return_to_inventory_page.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_suites.TestSuite.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_suites.TestSuite.test_suite.executor&quot;: &quot;Run&quot;,
-    &quot;Python.sandbox.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ostanic/Documents/PYTA21_TestareAutomata_Proiect/tests&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python tests.Python tests for cart_tests.TestCart.executor": "Run",
+    "Python tests.Python tests for cart_tests.TestCart.test_cart_value.executor": "Run",
+    "Python tests.Python tests for cart_tests.TestCartPage.test_cart_details.executor": "Run",
+    "Python tests.Python tests for cart_tests.TestCartPage.test_cart_value.executor": "Run",
+    "Python tests.Python tests for cart_tests.TestCartPage.test_continue_shopping_functionality.executor": "Run",
+    "Python tests.Python tests for checkout_tests.TestCheckoutPage.test_checkout_process.executor": "Run",
+    "Python tests.Python tests for checkout_tests.TestCheckoutPage.test_total_price_value.executor": "Run",
+    "Python tests.Python tests for inventory_tests.TestInventory.executor": "Run",
+    "Python tests.Python tests for inventory_tests.TestInventory.test_az_default_sorting.executor": "Run",
+    "Python tests.Python tests for inventory_tests.TestInventory.test_other_sorting.executor": "Run",
+    "Python tests.Python tests for inventory_tests.TestInventory.test_product_added_to_cart.executor": "Run",
+    "Python tests.Python tests for login_tests.TestLogin.executor": "Run",
+    "Python tests.Python tests for login_tests.TestLogin.test_login_correct_credentials.executor": "Run",
+    "Python tests.Python tests for login_tests.TestLogin.test_login_incorrect_credentials.executor": "Run",
+    "Python tests.Python tests for login_tests.TestLoginPage.test_login_correct_credentials.executor": "Run",
+    "Python tests.Python tests for product_tests.TestProductPage.test_product_details.executor": "Run",
+    "Python tests.Python tests for product_tests.TestProductPage.test_return_to_inventory.executor": "Run",
+    "Python tests.Python tests for product_tests.TestProductPage.test_return_to_inventory_page.executor": "Run",
+    "Python tests.Python tests for test_suites.TestSuite.executor": "Run",
+    "Python tests.Python tests for test_suites.TestSuite.test_suite.executor": "Run",
+    "Python.base_page.executor": "Run",
+    "Python.sandbox.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/ostanic/Documents/PYTA21_TestareAutomata_Proiect/tests",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ostanic\Documents\PYTA21_TestareAutomata_Proiect\tests" />
       <recent name="C:\Users\ostanic\Documents\PYTA21_TestareAutomata_Proiect\setup" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_suites.TestSuite.test_suite">
+  <component name="RunManager" selected="Python tests.Python tests for cart_tests.TestCartPage.test_cart_details">
+    <configuration name="base_page" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PYTA21_TestareAutomata_Proiect" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/setup" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/setup/base_page.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="sandbox" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PYTA21_TestareAutomata_Proiect" />
       <option name="ENV_FILES" value="" />
@@ -100,7 +134,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for checkout_tests.TestCheckoutPage.test_checkout_process" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for cart_tests.TestCartPage.test_cart_details" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="PYTA21_TestareAutomata_Proiect" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -111,11 +145,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;checkout_tests.TestCheckoutPage.test_checkout_process&quot;" />
+      <option name="_new_target" value="&quot;cart_tests.TestCartPage.test_cart_details&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for login_tests.TestLoginPage.test_login_correct_credentials" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for checkout_tests.TestCheckoutPage.test_total_price_value" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="PYTA21_TestareAutomata_Proiect" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -126,22 +160,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;login_tests.TestLoginPage.test_login_correct_credentials&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_suites.TestSuite" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="PYTA21_TestareAutomata_Proiect" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/runner" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_suites.TestSuite&quot;" />
+      <option name="_new_target" value="&quot;checkout_tests.TestCheckoutPage.test_total_price_value&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -162,11 +181,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for cart_tests.TestCartPage.test_cart_details" />
+        <item itemvalue="Python tests.Python tests for checkout_tests.TestCheckoutPage.test_total_price_value" />
+        <item itemvalue="Python.base_page" />
         <item itemvalue="Python tests.Python tests for test_suites.TestSuite.test_suite" />
         <item itemvalue="Python.sandbox" />
-        <item itemvalue="Python tests.Python tests for checkout_tests.TestCheckoutPage.test_checkout_process" />
-        <item itemvalue="Python tests.Python tests for login_tests.TestLoginPage.test_login_correct_credentials" />
-        <item itemvalue="Python tests.Python tests for test_suites.TestSuite" />
       </list>
     </recent_temporary>
   </component>
@@ -241,7 +260,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750161482533</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="readme update">
+      <option name="closed" value="true" />
+      <created>1750245576949</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1750245576949</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -259,6 +286,7 @@
     <MESSAGE value="upload project" />
     <MESSAGE value="project update" />
     <MESSAGE value="readme update" />
-    <option name="LAST_COMMIT_MESSAGE" value="readme update" />
+    <MESSAGE value="comments added" />
+    <option name="LAST_COMMIT_MESSAGE" value="comments added" />
   </component>
 </project>

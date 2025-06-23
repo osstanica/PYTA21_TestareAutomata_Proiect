@@ -6,12 +6,16 @@ from setup.login_page import LoginPage
 class TestInventoryPage(InventoryPage, LoginPage):
 
     def test_az_default_sorting(self):
+
+        ## login with the predefined user (the credentials are declared as constants in the LoginPage class) 
         LoginPage.login_as_standard_user(self, LoginPage.USERNAME, LoginPage.PASSWORD)
 
+        ## verify that the sorting option is by default set to "Name (A to Z)"
         in_app_sorting_option = self.get_text(self.SORT_DROPDOWN_CURRENT_LOCATOR)
         fail_message_sorting_default_option = f"The default sorting option should be: {self.DEFAULT_SORTING_OPTION}!"
         self.compare_test_with_reference(self.DEFAULT_SORTING_OPTION, in_app_sorting_option, fail_message_sorting_default_option)
 
+        ## verify that the products displayed on the page are sorted alphabetically ascending
         list_all_item_names_elements = self.find_elements(self.ITEMS_NAME_LOCATOR)
         list_all_item_names = []
         for element in list_all_item_names_elements:
@@ -21,11 +25,15 @@ class TestInventoryPage(InventoryPage, LoginPage):
         self.compare_test_with_reference(sorted(list_all_item_names), list_all_item_names, fail_message_elements_az_sorting)
 
 
-
     def test_other_sorting(self):
+
+        ## login with the predefined user (the credentials are declared as constants in the LoginPage class) 
         LoginPage.login_as_standard_user(self, LoginPage.USERNAME, LoginPage.PASSWORD)
+
+        ## change the sorting type
         self.change_sorting_criteria()
 
+        ## verify that the products displayed on the page are sorted correctly as per the sorting type chosen prior to this step
         in_app_sorting_option = self.get_text(self.SORT_DROPDOWN_CURRENT_LOCATOR)
         if in_app_sorting_option == self.ZA_SORTING_OPTION:
             list_all_item_names_elements = self.find_elements(self.ITEMS_NAME_LOCATOR)
@@ -63,7 +71,11 @@ class TestInventoryPage(InventoryPage, LoginPage):
 
 
     def test_product_added_to_cart(self):
+
+        ## login with the predefined user (the credentials are declared as constants in the LoginPage class) 
         LoginPage.login_as_standard_user(self, LoginPage.USERNAME, LoginPage.PASSWORD)
+
+        ## add a product to the shopping cart and verify that the "Add to cart" button was changed to "Remove" for that product and that the cart's icon was updated accordingly
         inventory_item = self.add_product_to_cart()
 
         fail_message_remove_button_displayed = "The 'Add to cart' button should have changed to 'Remove'!"
